@@ -14,17 +14,18 @@ waffles = [
 ]
 
 def update():
-    for line, waffle in zip(lines, waffles):
-        status = tube.get_status(line)
-        color = {
-            'Good Service': 'green',
-            'Minor Delays': 'orange',
-            'Severe Delays': 'red',
-            'Part Closure': 'gray',
-            'Service Closed': 'black',
-        }[status.description]
-        waffle.set_all(color)
-    sleep(60)
+    while True:
+        for line, waffle in zip(lines, waffles):
+            status = tube.get_status(line)
+            color = {
+                'Good Service': 'green',
+                'Minor Delays': 'orange',
+                'Severe Delays': 'red',
+                'Part Closure': 'gray',
+                'Service Closed': 'black',
+            }[status.description]
+            waffle.set_all(color)
+        sleep(60)
 
 thread = Thread(target=update)
 thread.start()
