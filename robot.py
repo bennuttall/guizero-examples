@@ -13,10 +13,6 @@ Text(app, "Right", grid=[0, 3])
 def scaled(value):
     return value / 100
 
-def steer_robot():
-    while True:
-        yield (scaled(left.get()), scaled(right.get()))
-
-robot.source = steer_robot()
+robot.source = zip(scaled(left.get()), scaled(right.get()))
 
 app.display()
