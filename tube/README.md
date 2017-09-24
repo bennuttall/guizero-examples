@@ -1,4 +1,4 @@
-# London Tube status monitor
+# London Tube line status monitor
 
 GUI to show the status of all the London tube lines
 
