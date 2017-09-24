@@ -2,7 +2,7 @@ from gpiozero import MCP3008
 from guizero import App, Slider
 from threading import Thread
 
-app = App()
+app = App("ADC GUI")
 adc = [MCP3008(i) for i in range(8)]
 
 sliders = [Slider(app, 0, 100) for pot in adc]
