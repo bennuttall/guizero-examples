@@ -1,16 +1,26 @@
-.
-├── adc
-│   └── adc_gui.py
-├── random-sparkles
-│   └── randomsparkles.py
-├── README.md
-├── robot
-│   └── robot.py
-├── traffic-hat
-│   └── traffichat.py
-├── traffic-lights
-│   └── traffic_lights.py
-└── tube
-    └── tube.py
+# guizero examples
 
-6 directories, 7 files
+├── [adc](adc/README.md)
+│   ├── [screenshot](adc_gui.png)
+│   ├── [code](adc_gui.py)
+├── [blinkt](blinkt/README.md)
+│   ├── [screenshot](blinkt_gui.png)
+│   ├── [code](blinkt_gui.py)
+├── [hueizero](hueizero/README.md)
+│   ├── [screenshot](hueizero.png)
+│   ├── [code](hueizero.py)
+├── [random-sparkles](random-sparkles/README.md)
+│   ├── [screenshot](random_sparkles.png)
+│   ├── [code](random_sparkles.py)
+├── [robot-controller](robot-controller/README.md)
+│   ├── [screenshot](robot_controller.png)
+│   └── [code](robot_controller.py)
+├── [traffic-hat](traffic-hat/README.md)
+│   ├── [screenshot](traffic_hat.png)
+│   └── [code](traffic_hat.py)
+├── [traffic-lights](traffic-lights/README.md)
+│   ├── [screenshot](traffic_lights.png)
+│   └── [code](traffic_lights.py)
+└── [tube](tube/README.md)
+    ├── [screenshot](tube.png)
+    └── [code](tube.py)
