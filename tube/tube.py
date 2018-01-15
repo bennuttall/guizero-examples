@@ -8,9 +8,9 @@ app = App("Tube status", layout="grid")
 tube = Status()
 lines = list(sorted(tube.list_lines()))
 
-[Text(app, line, grid=[y, 0], align="left") for y, line in enumerate(lines)]
+[Text(app, line, grid=[0, y], align="left") for y, line in enumerate(lines)]
 waffles = [
-    Waffle(app, height=1, width=1, grid=[y, 1]) for y, line in enumerate(lines)
+    Waffle(app, height=1, width=1, grid=[1, y]) for y, line in enumerate(lines)
 ]
 
 def update():

@@ -10,7 +10,7 @@ sliders = [Slider(app, 0, 100) for pot in adc]
 def update():
     while True:
         for slider, pot in zip(sliders, adc):
-            slider.set(pot.value * 100)
+            slider.value = pot.value * 100
 
 thread = Thread(target=update)
 thread.start()
